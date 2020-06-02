@@ -1,14 +1,15 @@
-package rapyuta.rapyuta;
+package io.rapyuta.POJO;
 
-public class UserPOJO {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class User {
 	
+	@JsonProperty("username")
 	String username;
+	
+	@JsonProperty("email")
 	String email;
 	
-	public UserPOJO(String username, String email){
-		this.username = username;
-		this.email = email;
-	}
 
 	public String getUsername() {
 		return username;
